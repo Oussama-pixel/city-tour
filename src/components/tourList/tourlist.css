@@ -1,0 +1,31 @@
+.tour-list {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tour-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tour-list {
+    width: 85vw;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .tour-list {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=tourlist.css.map */
